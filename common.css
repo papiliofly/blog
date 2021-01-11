@@ -117,13 +117,13 @@
   
   @media ( max-width:720px ) {
     .visible-md-up {
-      display:none;
+      display:none !important;
     }
   }
   
   @media ( min-width:721px ) {
     .visible-sm-down {
-      display:none;
+      display:none !important;
     }
   }
   /* 라이브러리 끝 */

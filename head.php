@@ -58,26 +58,26 @@
     <!-- 탑바 시작 -->
     <header class="top-bar con-min-width visible-md-up">
       <div class="con height-100p flex flex-jc-sb">
-        <a href="index.php" class="logo">
+        <a href="index.ssghtml.php" class="logo">
           <span>&#x1F63B;</span>
           <span>K's STUDY BLOG</span>
         </a>
         <nav class="top-bar__menu-box-1 height-100p">
           <ul class="flex height-100p">
             <li>
-              <a href="index.php" class="flex flex-jc-c flex-ai-c height-100p">
+              <a href="index.ssghtml.php" class="flex flex-jc-c flex-ai-c height-100p">
                 <span><i class="fas fa-home"></i></span>
                 <span>HOME</span>
               </a>
             </li>
             <li>
-              <a href="about.php" class="flex flex-jc-c flex-ai-c height-100p">
+              <a href="about.ssghtml.php" class="flex flex-jc-c flex-ai-c height-100p">
                 <span><i class="far fa-address-card"></i></span>
                 <span>ABOUT</span>
               </a>
             </li>
             <li>
-              <a href="portfolio.html" class="flex flex-jc-c flex-ai-c height-100p">
+              <a href="pf.ssghtml.html" class="flex flex-jc-c flex-ai-c height-100p">
                 <span><i class="fas fa-list-alt"></i></span>
                 <span>PORTFOLIO</span>
               </a>

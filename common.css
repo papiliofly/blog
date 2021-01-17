@@ -43,6 +43,10 @@ a {
 /* 노말라이즈 끝 */
 
 /* 라이브러리 시작 */
+.padding-0-10 {
+    padding: 0 10px;
+}
+
 .flex {
     display: flex;
 }
@@ -156,6 +160,13 @@ a {
 
 /* 바디 콘텐트 끝 */
 
+/* 섹션 타이틀 시작 */
+.section-title {
+    padding: 0 10px;
+}
+
+/* 섹션 타이틀 끝 */
+
 /* 로고 시작 */
 .logo {
     display: flex;
@@ -183,6 +194,8 @@ a {
     margin-left: 10px;
 }
 
+.top-bar__menu-box-1>ul>li {}
+
 .top-bar__menu-box-1>ul>li>a {
     font-weight: bold;
     padding-left: 20px;
@@ -206,6 +219,10 @@ a {
     --mobile-top-bar__height: 70px;
 }
 
+.mobile-top-bar-padding {
+    padding-top: var(--mobile-top-bar__height);
+}
+
 .mobile-top-bar {
     background-color: black;
     color: white;
@@ -215,10 +232,6 @@ a {
     left: 0;
     width: 100%;
     z-index: 1000;
-}
-
-body {
-    padding-top: var(--mobile-top-bar__height);
 }
 
 :root {
@@ -335,6 +348,21 @@ body {
     content: "작성 : ";
 }
 
+.article-list-box__writer {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.article-list-box__writer>span:last-child {
+    width: 70px;
+    height: 70px;
+    background-color: darksalmon;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
 /* 게시물 리스트 박스 끝 */
 
 /* 토스트 UI 에디터 시작 */
@@ -371,5 +399,18 @@ body {
 }
 
 /* 토스트 UI 에디터 끝 */
+
+/* svgs 시작 */
+.svgs {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.svgs>* {
+    display: block;
+}
+
+/* svgs 끝 */
 
 /* 커스텀 끝 */

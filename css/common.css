@@ -322,6 +322,7 @@ a {
 .bottom-bar {
     background-color: black;
     color: white;
+    margin-top:30px;
 }
 
 .bottom-bar>.con {

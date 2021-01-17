@@ -45,4 +45,7 @@ CmgCsCkjNWo
 ```
 EOT; 
 
-?>
+if ( isset($articleId) ) {
+    $articleVarName = "article" . $articleId;
+    $selectedArticle = $$articleVarName;
+} 

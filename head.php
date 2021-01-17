@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>STUDY BLOG HOME</title>
+    <title><?=$siteTitle?></title>
 
     <!-- 반응형 필수 -->
     <meta name="viewport" content="width=device-width, user-scalable=no" />

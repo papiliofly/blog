@@ -29,8 +29,8 @@ require_once "head.php";
         $article = $$articleVarName;
         ?>
                 <li>
-                    <h1 class="article-list-box__title"><a
-                            href="article_detail_<?=$article["id"]?>.ssghtml.php"><?=$article["title"]?></a></h1>
+                    <h1 class="article-list-box__title">
+                    <a href="article_detail_<?=$article["id"]?>.ssghtml.php"><?=$article["title"]?></a></h1>
                     <div class="article-list-box__reg-date"><?=$article["regDate"]?></div>
                     <div class="article-list-box__writer">
                         <span><?=$article["writerName"]?></span>

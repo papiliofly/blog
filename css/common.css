@@ -185,7 +185,7 @@ a {
 
 /* 탑바 시작 */
 .top-bar {
-    background-color: black;
+    background-color: darkseagreen;
     color: white;
     height: 100px;
 }
@@ -224,7 +224,7 @@ a {
 }
 
 .mobile-top-bar {
-    background-color: black;
+    background-color: darkseagreen;
     color: white;
     height: var(--mobile-top-bar__height);
     position: fixed;
@@ -289,7 +289,7 @@ a {
     width: 100%;
     bottom: 0;
     color: white;
-    background-color: black;
+    background-color: darkseagreen;
     transition: left .3s;
     display: flex;
     align-items: center;
@@ -320,7 +320,7 @@ a {
 
 /* 하단바 시작 */
 .bottom-bar {
-    background-color: black;
+    background-color: darkseagreen;
     color: white;
     margin-top:30px;
 }

@@ -20,6 +20,24 @@ require_once "head.php";
 
 <section class="section-latest-articles con-min-width">
     <div class="con">
+
+    <div class="article-list-box">
+            <ul>
+                <li>
+                <h1 class="article-list-box__title"><a href="article_detail_3.ssghtml.php"><?=$article3["title"]?></a></h1>
+                <div class="article-list-box__reg-date"><?=$article3["regDate"]?></div>
+                    <div class="article-list-box__writer">
+                    <span><?=$article3["writerName"]?></span>
+                    <span><?=$article3["writerAvatar"]?></span>
+                    </div>
+                    <div class="article-list-box__body">
+                    <script type="text/x-template"><?=$article3['body']?></script>
+                    <div class="toast-ui-viewer"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
         <div class="article-list-box">
             <ul>
                 <li>

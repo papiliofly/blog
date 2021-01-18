@@ -1,5 +1,5 @@
 <?php
-$siteTitle = "STUDY BLOG";
+$siteTitle = "K님의 작은집";
 
 // 게시물 3
 $article3 = [];

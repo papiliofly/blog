@@ -21,54 +21,27 @@ require_once "head.php";
 <section class="section-latest-articles con-min-width">
     <div class="con">
 
-    <div class="article-list-box">
-            <ul>
-                <li>
-                <h1 class="article-list-box__title"><a href="article_detail_3.ssghtml.php"><?=$article3["title"]?></a></h1>
-                <div class="article-list-box__reg-date"><?=$article3["regDate"]?></div>
-                    <div class="article-list-box__writer">
-                    <span><?=$article3["writerName"]?></span>
-                    <span><?=$article3["writerAvatar"]?></span>
-                    </div>
-                    <div class="article-list-box__body">
-                    <script type="text/x-template"><?=$article3['body']?></script>
-                    <div class="toast-ui-viewer"></div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
         <div class="article-list-box">
             <ul>
+                <?php for ( $i = 4; $i >= 1; $i-- ) { ?>
+                <?php
+        $articleVarName = "article" . $i;
+        $article = $$articleVarName;
+        ?>
                 <li>
-                <h1 class="article-list-box__title"><a href="article_detail_2.ssghtml.php"><?=$article2["title"]?></a></h1>
-                <div class="article-list-box__reg-date"><?=$article2["regDate"]?></div>
+                    <h1 class="article-list-box__title"><a
+                            href="article_detail_<?=$article["id"]?>.ssghtml.php"><?=$article["title"]?></a></h1>
+                    <div class="article-list-box__reg-date"><?=$article["regDate"]?></div>
                     <div class="article-list-box__writer">
-                    <span><?=$article2["writerName"]?></span>
-                    <span><?=$article2["writerAvatar"]?></span>
+                        <span><?=$article["writerName"]?></span>
+                        <span><?=$article["writerAvatar"]?></span>
                     </div>
                     <div class="article-list-box__body">
-                    <script type="text/x-template"><?=$article2['body']?></script>
-                    <div class="toast-ui-viewer"></div>
+                        <script type="text/x-template"><?=$article['body']?></script>
+                        <div class="toast-ui-viewer"></div>
                     </div>
                 </li>
-            </ul>
-        </div>
-
-        <div class="article-list-box">
-            <ul>
-                <li>
-                <h1 class="article-list-box__title"><a href="article_detail_1.ssghtml.php"><?=$article1["title"]?></a></h1>
-                <div class="article-list-box__reg-date"><?=$article1["regDate"]?></div>
-                    <div class="article-list-box__writer">
-                    <span><?=$article1["writerName"]?></span>
-                    <span><?=$article1["writerAvatar"]?></span>
-                    </div>
-                    <div class="article-list-box__body">
-                    <script type="text/x-template"><?=$article1['body']?></script>
-                    <div class="toast-ui-viewer"></div>
-                    </div>
-                </li>
+                <?php } ?>
             </ul>
         </div>
     </div>

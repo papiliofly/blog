@@ -1,6 +1,13 @@
 <?php
+if ( defined('STDIN') ) {
+    $_GET['id'] = $argv[1];
+}
+
 require_once "data.php";
 require_once "head.php";
+
+$articleId = $_GET['id'];
+$selectedArticle = &getArticleById($articleId);
 ?>
 
 <link rel="stylesheet" href="css/about.css">
@@ -19,7 +26,7 @@ require_once "head.php";
 
 <section class="section-article-detail con-min-width padding-0-10">
     <div class="con">
-        <h1 class="article-list-box__title"><a href="article_detail_2.ssghtml.php"><?=$selectedArticle["title"]?></a></h1>
+        <h1 class="article-list-box__title"><?=$selectedArticle["title"]?></h1>
 
         <div class="article-list-box__reg-date"><?=$selectedArticle["regDate"]?></div>
 
@@ -32,6 +39,11 @@ require_once "head.php";
             <script type="text/x-template"><?=$selectedArticle['body']?></script>
             <div class="toast-ui-viewer"></div>
         </div>
+        <?=getArticleTagsHtml($selectedArticle["id"])?>
+        <div class="article-list-box__tags">
+
+        </div>
+
     </div>
     
     </section>

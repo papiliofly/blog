@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>K님의 작은집</title>
+
+    <!-- 반응형 필수 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- 토스트 UI 시작 -->
+    <!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
+
+    <!-- 토스트 UI 에디터, 자바스크립트 코어 -->
+    <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js" defer></script>
+
+    <!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
+    <!-- 토스트 UI 에디터, CSS 코어 -->
+    <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+
+    <!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
+    <script
+        src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"
+        defer></script>
+    <!-- 토스트 UI 끝 -->
+
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/common.js" defer></script>
+
+
+</head>
+
+<body>
+    <div class="body-content">
+
+        <!-- 탑바 시작 -->
+        <header class="top-bar con-min-width visible-md-up">
+            <div class="con height-100p flex flex-jc-sb">
+                <a href="index.html" class="logo">
+                    <span>&#x1F63D;</span>
+                    <span>K님의 작은집</span>
+                </a>
+                <nav class="top-bar__menu-box-1 height-100p">
+                    <ul class="flex height-100p">
+                        <li>
+                            <a href="index.html" class="flex flex-jc-c flex-ai-c height-100p">
+                                <span><i class="fas fa-home"></i></span>
+                                <span>HOME</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="flex flex-jc-c flex-ai-c height-100p">
+                                <span><i class="far fa-address-card"></i></span>
+                                <span>ABOUT</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pf.html" class="flex flex-jc-c flex-ai-c height-100p">
+                                <span><i class="fas fa-list-alt"></i></span>
+                                <span>PORTFOLIO</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex flex-jc-c flex-ai-c height-100p">
+                                <span><i class="fas fa-newspaper"></i></span>
+                                <span>ARTICLES</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- 탑바 끝 -->
+
+        <!-- 모바일 탑바 시작 -->
+        <header class="mobile-top-bar con-min-width visible-sm-down flex">
+            <div class="flex-1-0-0 flex">
+                <div class="mobile-top-bar__btn-toggle-side-bar flex-as-c">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="logo height-100p">
+                    <span>&#x1F63D;</span>
+                    <span>K님의 작은집</span>
+                </a>
+            </div>
+            <div class="flex-1-0-0"></div>
+        </header>
+        <!-- 모바일 탑바 끝 -->
+
+        <!-- 모바일 사이드 바 시작 -->
+        <aside class="mobile-side-bar visible-sm-down">
+
+            <nav class="mobile-side-bar__menu-box-1">
+                <ul>
+                    <li>
+                        <a href="#" class="block">
+                            <span><i class="fas fa-home"></i></span>
+                            <span>HOME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block">
+                            <span><i class="far fa-address-card"></i></span>
+                            <span>ABOUT</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block">
+                            <span><i class="fas fa-list-alt"></i></span>
+                            <span>PORTFOLIO</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block">
+                            <span><i class="fas fa-newspaper"></i></span>
+                            <span>ARTICLES</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </aside>
+        <!-- 모바일 사이드 바 끝 -->
+
+        <main>
+<link rel="stylesheet" href="css/about.css">
+<script src="js/about.js" defer></script>
+
+<section class="section-title con-min-width">
+    <h1 class="con">
+        <span>
+            <i class="fas fa-newspaper"></i>
+        </span>
+        <span>
+            DETAIL
+        </span>
+    </h1>
+</section>
+
+<section class="section-article-detail con-min-width padding-0-10">
+    <div class="con">
+        <h1 class="article-list-box__title">자바스크립트 태그</h1>
+
+        <div class="article-list-box__reg-date">2020-01-12 12:12:14</div>
+
+        <div class="article-list-box__writer">
+            <span>홍길동</span>
+            <span><svg viewBox="0 0 264 280"><use xlink:href="#avatar-1"></use></svg></span>
+        </div>
+
+        <div class="article-list-box__body">
+            <script type="text/x-template"># 태그
+```codepen
+https://codepen.io/jangka44/embed/NWROGrL?height=265&theme-id=light&default-tab=html,result&editable=true
+```
+# 콘솔
+```codepen
+https://codepen.io/jangka44/embed/zYKmvoG?height=300&theme-id=light&default-tab=js,result&editable=true
+```
+# 참고영상
+```youtube
+CmgCsCkjNWo
+```</script>
+            <div class="toast-ui-viewer"></div>
+        </div>
+         <a class="tag-link" href="article_list_by_tag_js.html">#js</a>        <div class="article-list-box__tags">
+
+        </div>
+
+    </div>
+    
+    </section>
+
+<section class="section-article-reply-box con-min-width padding-0-10">
+    <div class="con">
+    <div id="disqus_thread"></div>
+
+    <script>
+        var disqus_config = function () {
+            this.page.url = 'https://b.papiliofly.com/article_detail_1.html';
+            this.page.identifier = 'article_detail_1.html';
+        };
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://phpblog-2.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    </div>
+</section>
+
+</main>
+
+<!-- 하단바 시작 -->
+<footer class="bottom-bar con-min-width">
+    <div class="con flex flex-jc-c">
+        <a href="#" class="logo">
+            <span>&#x1F63D;</span>
+            <span>K님의 작은집</span>
+        </a>
+    </div>
+</footer>
+<!-- 하단바 끝 -->
+
+</div>
+
+<!-- svgs 시작 -->
+<div class="svgs">
+<svg id="avatar-1" viewBox="0 0 264 280" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <circle id="path-1" cx="120" cy="120" r="120"></circle>
+        <path
+            d="M12,160 C12,226.27417 65.72583,280 132,280 C198.27417,280 252,226.27417 252,160 L264,160 L264,-1.42108547e-14 L-3.19744231e-14,-1.42108547e-14 L-3.19744231e-14,160 L12,160 Z"
+            id="path-3"></path>
+        <path
+            d="M124,144.610951 L124,163 L128,163 L128,163 C167.764502,163 200,195.235498 200,235 L200,244 L0,244 L0,235 C-4.86974701e-15,195.235498 32.235498,163 72,163 L72,163 L76,163 L76,144.610951 C58.7626345,136.422372 46.3722246,119.687011 44.3051388,99.8812385 C38.4803105,99.0577866 34,94.0521096 34,88 L34,74 C34,68.0540074 38.3245733,63.1180731 44,62.1659169 L44,56 L44,56 C44,25.072054 69.072054,5.68137151e-15 100,0 L100,0 L100,0 C130.927946,-5.68137151e-15 156,25.072054 156,56 L156,62.1659169 C161.675427,63.1180731 166,68.0540074 166,74 L166,88 C166,94.0521096 161.51969,99.0577866 155.694861,99.8812385 C153.627775,119.687011 141.237365,136.422372 124,144.610951 Z"
+            id="path-5"></path>
+    </defs>
+    <g id="Avataaar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-825.000000, -1100.000000)" id="Avataaar/Circle">
+            <g transform="translate(825.000000, 1100.000000)">
+                <g id="Mask"></g>
+                <g id="Avataaar" stroke-width="1" fill-rule="evenodd" mask="url(#mask-4)">
+                    <g id="Body" transform="translate(32.000000, 36.000000)">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <use fill="#D0C6AC" xlink:href="#path-5"></use>
+                        <g id="Skin/👶🏽-03-Brown" mask="url(#mask-6)" fill="#EDB98A">
+                            <g transform="translate(-32.000000, 0.000000)" id="Color">
+                                <rect x="0" y="0" width="264" height="244"></rect>
+                            </g>
+                        </g>
+                        <path
+                            d="M156,79 L156,102 C156,132.927946 130.927946,158 100,158 C69.072054,158 44,132.927946 44,102 L44,79 L44,94 C44,124.927946 69.072054,150 100,150 C130.927946,150 156,124.927946 156,94 L156,79 Z"
+                            id="Neck-Shadow" fill-opacity="0.100000001" fill="#000000" mask="url(#mask-6)">
+                        </path>
+                    </g>
+                    <g id="Clothing/Overall" transform="translate(0.000000, 170.000000)">
+                        <defs>
+                            <path
+                                d="M94,29.6883435 L94,74 L170,74 L170,29.6883435 C179.362956,30.9893126 188.149952,34.0907916 196.00002,38.6318143 L196,110 L187,110 L77,110 L68,110 L68,38.6318027 C75.8500482,34.0907916 84.6370437,30.9893126 94,29.6883435 Z"
+                                id="react-path-1770"></path>
+                        </defs>
+                        <mask id="react-mask-1771" fill="white">
+                            <use xlink:href="#react-path-1770"></use>
+                        </mask>
+                        <use id="Overall" fill="#B7C1DB" fill-rule="evenodd" xlink:href="#react-path-1770">
+                        </use>
+                        <g id="Color/Palette/Gray-01" mask="url(#react-mask-1771)" fill-rule="evenodd"
+                            fill="#FF5C5C">
+                            <rect id="🖍Color" x="0" y="0" width="264" height="110"></rect>
+                        </g>
+                        <circle id="Button" fill="#F4F4F4" fill-rule="evenodd" cx="81" cy="83" r="5"></circle>
+                        <circle id="Button" fill="#F4F4F4" fill-rule="evenodd" cx="183" cy="83" r="5"></circle>
+                    </g>
+                    <g id="Face" transform="translate(76.000000, 82.000000)" fill="#000000">
+                        <g id="Mouth/Default" transform="translate(2.000000, 52.000000)"
+                            fill-opacity="0.699999988">
+                            <path
+                                d="M40,15 C40,22.7319865 46.2680135,29 54,29 L54,29 C61.7319865,29 68,22.7319865 68,15"
+                                id="Mouth"></path>
+                        </g>
+                        <g id="Nose/Default" transform="translate(28.000000, 40.000000)" fill-opacity="0.16">
+                            <path
+                                d="M16,8 C16,12.418278 21.372583,16 28,16 L28,16 C34.627417,16 40,12.418278 40,8"
+                                id="Nose"></path>
+                        </g>
+                        <g id="Eyes/Default-😀" transform="translate(0.000000, 8.000000)"
+                            fill-opacity="0.599999964">
+                            <circle id="Eye" cx="30" cy="22" r="6"></circle>
+                            <circle id="Eye" cx="82" cy="22" r="6"></circle>
+                        </g>
+                        <g id="Eyebrow/Outline/Default" fill-opacity="0.599999964">
+                            <g id="I-Browse" transform="translate(12.000000, 6.000000)">
+                                <path
+                                    d="M3.63024536,11.1585767 C7.54515501,5.64986673 18.2779197,2.56083721 27.5230268,4.83118046 C28.5957248,5.0946055 29.6788665,4.43856013 29.9422916,3.36586212 C30.2057166,2.2931641 29.5496712,1.21002236 28.4769732,0.94659732 C17.7403633,-1.69001789 5.31209962,1.88699832 0.369754639,8.84142326 C-0.270109626,9.74178291 -0.0589363917,10.9903811 0.84142326,11.6302454 C1.74178291,12.2701096 2.9903811,12.0589364 3.63024536,11.1585767 Z"
+                                    id="Eyebrow" fill-rule="nonzero"></path>
+                                <path
+                                    d="M61.6302454,11.1585767 C65.545155,5.64986673 76.2779197,2.56083721 85.5230268,4.83118046 C86.5957248,5.0946055 87.6788665,4.43856013 87.9422916,3.36586212 C88.2057166,2.2931641 87.5496712,1.21002236 86.4769732,0.94659732 C75.7403633,-1.69001789 63.3120996,1.88699832 58.3697546,8.84142326 C57.7298904,9.74178291 57.9410636,10.9903811 58.8414233,11.6302454 C59.7417829,12.2701096 60.9903811,12.0589364 61.6302454,11.1585767 Z"
+                                    id="Eyebrow" fill-rule="nonzero"
+                                    transform="translate(73.000154, 6.039198) scale(-1, 1) translate(-73.000154, -6.039198) ">
+                                </path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Top" stroke-width="1" fill-rule="evenodd">
+                        <defs>
+                            <rect id="react-path-1698" x="0" y="0" width="264" height="280"></rect>
+                            <path
+                                d="M148.859344,69 C148.952588,70.3212062 149,71.6550662 149,73 L149,111 C149,133.339168 135.919579,152.623239 117,161.610951 L117,170.317435 C135.145605,171.815797 152.721153,174.335027 163.000169,177 C172.952646,163.439362 185.884594,150.800081 186.000169,126 C186.085192,107.014914 158.324059,30.4276364 146.000169,15 C137.861928,4.81215989 117.30504,1.44935656 93.0001685,1 C68.6952966,0.550643437 48.9231015,6.50878211 41,16 C30.3189583,28.7950013 -0.0850232975,107.014914 4.92293245e-13,126 C0.115574613,150.800081 13.047523,163.439362 23,177 C33.2789946,174.335033 50.8544902,171.815807 69,170.317444 L69,161.610951 C50.0804213,152.623239 37,133.339168 37,111 L37,73 L37,73 C37,71.6550662 37.0474121,70.3212062 37.1406562,69 L65.3735517,69 L69.2529753,47.5561285 L72.058097,69 L148.859344,69 Z"
+                                id="react-path-1699"></path>
+                        </defs>
+                        <mask id="react-mask-1696" fill="white">
+                            <use xlink:href="#react-path-1698"></use>
+                        </mask>
+                        <g id="Mask"></g>
+                        <g id="Top/Long-Hair/Mia-Wallace" mask="url(#react-mask-1696)">
+                            <g transform="translate(-1.000000, 0.000000)">
+                                <path
+                                    d="M69.0330562,76.212888 C81.9708809,43.1292208 95.6458945,26.5873873 110.058097,26.5873873 C110.596882,26.5873873 139.311316,26.3494141 158.112657,26.226792 C178.767149,35.5853581 193,55.3036503 193,78.114622 L193,93 L110.058097,93 L107.252975,69.820435 L103.373552,93 L69,93 L69,78.114622 C69,77.478246 69.0110772,76.844277 69.0330621,76.2128728 L69.0330562,76.212888 Z"
+                                    id="Shadow" fill-opacity="0.16" fill="#000000" fill-rule="evenodd"></path>
+                                <g id="Hair" stroke-width="1" fill="none" fill-rule="evenodd"
+                                    transform="translate(40.000000, 19.000000)">
+                                    <mask id="react-mask-1697" fill="white">
+                                        <use xlink:href="#react-path-1699"></use>
+                                    </mask>
+                                    <use id="Combined-Shape" fill="#E6E6E6" xlink:href="#react-path-1699"></use>
+                                    <g id="Skin/👶🏽-03-Brown" mask="url(#react-mask-1697)" fill="#2C1B18">
+                                        <g transform="translate(0.000000, 0.000000) " id="Color">
+                                            <rect x="0" y="0" width="264" height="280"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g id="Top/_Resources/Kurt" fill="none"
+                                    transform="translate(62.000000, 85.000000)" stroke-width="1">
+                                    <defs>
+                                        <filter x="-0.8%" y="-2.0%" width="101.5%" height="108.0%"
+                                            filterUnits="objectBoundingBox" id="react-filter-1729">
+                                            <feOffset dx="0" dy="2" in="SourceAlpha"
+                                                result="shadowOffsetOuter1"></feOffset>
+                                            <feColorMatrix
+                                                values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0"
+                                                type="matrix" in="shadowOffsetOuter1"
+                                                result="shadowMatrixOuter1"></feColorMatrix>
+                                            <feMerge>
+                                                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                                                <feMergeNode in="SourceGraphic"></feMergeNode>
+                                            </feMerge>
+                                        </filter>
+                                    </defs>
+                                    <g id="Kurts" filter="url(#react-filter-1729)"
+                                        transform="translate(5.000000, 2.000000)">
+                                        <path
+                                            d="M66,11.1111111 C54.9625586,11.1111111 53.3705645,2.0266011 30.6705882,0.740740741 C7.98552275,-0.283199952 0.815225204,6.4494855 0.776470588,11.1111111 C0.813236892,15.4042795 -0.352293566,26.5612661 14.3647059,39.6296296 C29.1367705,55.1420807 44.2704162,49.8818301 49.6941176,44.8148148 C55.1352081,42.4731118 61.3403442,21.4596351 66,21.4814815 C70.6596558,21.5033279 76.8647919,42.4731118 82.3058824,44.8148148 C87.7295838,49.8818301 102.86323,55.1420807 117.635294,39.6296296 C132.352294,26.5612661 131.186763,15.4042795 131.223529,11.1111111 C131.184775,6.4494855 124.014477,-0.283199952 101.329412,0.740740741 C78.6294355,2.0266011 77.0374414,11.1111111 66,11.1111111 Z"
+                                            id="It!" fill="#F4F4F4" fill-rule="nonzero"></path>
+                                        <path
+                                            d="M55.1294118,21.4814815 C55.5103632,13.8233491 42.2156493,5.64243259 27.9529412,5.92592593 C13.6973442,6.22450879 11.8417942,15.3786982 11.6470588,18.8888889 C11.2982286,27.0220633 20.014463,45.3037598 36.1058824,44.8148148 C52.1972736,44.305848 54.9092435,26.5344305 55.1294118,21.4814815 Z"
+                                            id="Did" fill="#2F383B" fill-rule="nonzero"></path>
+                                        <path
+                                            d="M120.352941,21.4814815 C120.733893,13.8233491 107.439179,5.64243259 93.1764706,5.92592593 C78.9208736,6.22450879 77.0653236,15.3786982 76.8705882,18.8888889 C76.521758,27.0220633 85.2379924,45.3037598 101.329412,44.8148148 C117.420803,44.305848 120.132773,26.5344305 120.352941,21.4814815 Z"
+                                            id="Courtney" fill="#2F383B" fill-rule="nonzero"
+                                            transform="translate(98.611765, 25.370370) scale(-1, 1) translate(-98.611765, -25.370370) ">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+</div>
+<!-- svgs 끝 -->
+</body>
+
+</html>

@@ -5,7 +5,7 @@
     <div class="con flex flex-jc-c">
         <a href="#" class="logo">
             <span>&#x1F63D;</span>
-            <span>K님의 작은집</span>
+            <span>K's STUDY BLOG</span>
         </a>
     </div>
 </footer>

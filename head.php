@@ -80,7 +80,7 @@ if ( !isset($pageThumbUrl) ) {
             <div class="con height-100p flex flex-jc-sb">
                 <a href="index.ssghtml.php" class="logo">
                     <span>&#x1F63D;</span>
-                    <span>K님의 작은집</span>
+                    <span>K's STUDY BLOG</span>
                 </a>
                 <nav class="top-bar__menu-box-1 height-100p">
                     <ul class="flex height-100p">
@@ -126,7 +126,7 @@ if ( !isset($pageThumbUrl) ) {
             <div>
                 <a href="#" class="logo height-100p">
                     <span>&#x1F63D;</span>
-                    <span>K님의 작은집</span>
+                    <span>K's STUDY BLOG</span>
                 </a>
             </div>
             <div class="flex-1-0-0"></div>

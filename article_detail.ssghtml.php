@@ -4,10 +4,15 @@ if ( defined('STDIN') ) {
 }
 
 require_once "data.php";
-require_once "head.php";
 
 $articleId = $_GET['id'];
-$selectedArticle = &getArticleById($articleId);
+$selectedArticle = &getForPrintArticleById($articleId);
+$pageTitle = $selectedArticle['pageTitle'];
+$pageThumbUrl = $selectedArticle['pageThumbUrl'];
+$pageDescription = $selectedArticle['pageDescription'];
+$pageKeywordsStr = $selectedArticle['pageKeywordsStr'];
+
+require_once "head.php";
 ?>
 
 <link rel="stylesheet" href="css/about.css">

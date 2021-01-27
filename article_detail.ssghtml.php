@@ -40,18 +40,16 @@ require_once "head.php";
             <span><?=$selectedArticle["writerAvatar"]?></span>
         </div>
 
+        <div class="article-list-box__tags">
+            <?=getArticleTagsHtml($selectedArticle["id"])?>
+        </div>
+        
         <div class="article-list-box__body">
             <script type="text/x-template"><?=$selectedArticle['body']?></script>
             <div class="toast-ui-viewer"></div>
         </div>
-        <?=getArticleTagsHtml($selectedArticle["id"])?>
-        <div class="article-list-box__tags">
-
-        </div>
-
     </div>
-    
-    </section>
+</section>
 
 <section class="section-article-reply-box con-min-width padding-0-10">
     <div class="con">

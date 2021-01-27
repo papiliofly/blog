@@ -6,7 +6,7 @@ $siteTitle = "K's STUDY BLOG";
 $siteDescription = "디자이너 김경빈의 기술 블로그 입니다.";
 $siteKeywordsStr = "CSS, HTML, JS";
 $siteName = "K's STUDY BLOG";
-$siteThumbUrl = "https://ssg-2020-12.oa.gg/img/logo/logo_opengraph.png";
+$siteThumbUrl = "https://papiliofly.gihub.io/blog/img/Untitled-1.jpg";
 
 // 태그정보 시작
 $tagInfos = [

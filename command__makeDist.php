@@ -59,9 +59,13 @@ function compileItem($originFileAndOpt, $distFile) {
         mkdir($distDirPath, 0777, true);
     }
 
-    $command = "c:\\xampp\\php\\php.exe {$originFileAndOpt} > {$distFile}";
-
-    shell_exec($command);
+    if ( strpos($distFile, ".html") !== false ) {
+        $command = "c:\\xampp\\php\\php.exe {$originFileAndOpt} > {$distFile}";
+        shell_exec($command);
+    }
+    else {
+        copy($originFileAndOpt, $distFile);
+    }
 
     adaptForStatic($distFile);
 
@@ -74,7 +78,7 @@ function adaptForStatic($distFileName) {
     if ( strpos($distFileName, ".html") === false ) {
         return;
     }
-    
+
     $newSource = file_get_contents($distFileName);
     $newSource = str_replace(["&ext=html", "article_detail.ssghtml.php?id=", "article_list_by_tag.ssghtml.php?tag=", ".ssghtml.php"], [".html", "article_detail_", "article_list_by_tag_", ".html"], $newSource);
     file_put_contents($distFileName, $newSource);

@@ -6,17 +6,14 @@ $siteTitle = "K's STUDY BLOG";
 $siteDescription = "디자이너 김경빈의 기술 블로그 입니다.";
 $siteKeywordsStr = "CSS, HTML, JS";
 $siteName = "K's STUDY BLOG";
-$siteThumbUrl = "https://papiliofly.gihub.io/blog/img/Untitled-1.jpg";
+$siteThumbUrl = "https://papiliofly.github.io/blog/img/Untitled-1.jpg";
 
 // 태그정보 시작
 $tagInfos = [
     "js" => [
-        //"pageThumbUrl" => "자바스크립트 관련 글 전용 이미지"
+        "pageThumbUrl" => "자바스크립트 관련 글 전용 이미지",
         //"pageDescription" => "2021년 특별기획, 자바스크립트 관련 강좌 입니다."
     ],
-    "html" => [
-        //"pageThumbUrl" => "html 관련 글 전용 이미지"
-    ]
 ];
 // 태그정보 끝
 
